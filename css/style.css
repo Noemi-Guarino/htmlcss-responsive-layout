@@ -16,7 +16,6 @@
     margin-bottom: 30px;
 }
 
-
 .header_nav_container{
     display: flex;
     justify-content: space-between;
@@ -45,10 +44,14 @@ nav> ol> li> a{
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .botton> a {
     color: black;
+    text-decoration: none;
+
 }
 
 img {
@@ -72,13 +75,21 @@ img {
     margin-bottom: 20px;
 }
 
-
 .column{
     background-color: #B5DDFF;
     border-radius: 30px;
-    padding: 20px;
     margin-bottom: 20px;
     text-align: center;
+}
+
+#withoutbottompadding{
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.withpadding{
+    padding: 20px;
 }
 
 #blue{
@@ -86,12 +97,13 @@ img {
     color: white;
 }
 
-.imgcellular{
-    margin-top: 20px;
+#blue> a{
+    color: white;
 }
 
-.column> div> *{
-    margin-bottom: 20px;
+
+.imgcellular{
+    margin-top: 20px;
 }
 
 .main_container{
@@ -128,8 +140,13 @@ img {
 .introduction_partners> *{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 
+.introduction_partners> h2{
+    color: #9792E4;
+    font-size: 2em;
+}
 
 .partners_card> * , .cardprofile> *{
     margin-bottom: 20px;
@@ -137,14 +154,12 @@ img {
     padding: 20px;
 }
 
-
 .circleimg> img{
     border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
-
 
 .cardprofile{
     background-color: #9792E4;
@@ -154,29 +169,35 @@ img {
     color: white;
 }
 
+.benefits_cards, .container_profiles, .cards{
+    padding: 20px;
+}
+
+.second_section> h2 {
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
 .benefits_card{
     background-color: white;
     border-radius: 30px;
     padding: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
-.main_container> .container> h1{
+.main_container> .container> h2{
     color: white;
     padding: 20px;
-    margin-bottom: 20px;
-    margin-top: 30px;
     text-align: center;
     font-size: 2em;
 }
 
-
-.benefits_card> h2, h3{
+.benefits_card> h2, .benefits_card> h3{
     color: #9792E4;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .benefits_card> *{
@@ -186,8 +207,89 @@ img {
 #buttonpurple{
     background-color: #9792E4;
     color: white;
+    display: inline-block;
 }
 
+#buttonpurpleinverted{
+    background-color: white;
+    color: #9792E4;
+    display: inline-block;
+    text-align: center;
+}
+
+.container_aboutus{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.container_aboutus> *{
+    margin-bottom: 30px;
+}
+
+.aboutus_left> h3{
+    color: #9792E4;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.aboutus_right> h3{
+    color: #9792E4;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.virgolette{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #9792E4;
+    font-size: 10em;
+}
+
+#imgvirgolette{
+    position: relative;
+    display: inline-block;
+}
+
+.footer_top{
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.footer_top> h3, .benefits_card> h2{
+    font-size: 2.5em;
+}
+
+.footer_top> *{
+    margin-bottom: 20px;
+}
+
+.footer_bottom{
+    background-color: #333333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer_bottom> .container> *{
+    margin-bottom: 20px;
+}
+
+#purplelink{
+    color: #9792E4;
+    display: inline-block;
+}
+
+#whitelink{
+    color: white;
+}
+
+#yellowtitle{
+    font-size: 2.5em;
+    color:#FDC15F;
+}
 
 
 {}
@@ -215,7 +317,6 @@ img {
         margin-right: 10px; 
         margin-left: 10px; 
         margin-bottom: 10px;
-        padding: 20px;
         width: calc(100% / 3 - 20px); 
         text-align: center;
     }
@@ -249,6 +350,20 @@ img {
         margin-bottom: 20px;
     }
     
+    .container_aboutus{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aboutus_left> * , .aboutus_right> * {
+        margin-bottom: 20px;    
+    }
+
+    .aboutus_right{
+        margin-left: 30px;
+    }
+
+    
 }
 
 /* responsive desktop */
@@ -274,8 +389,7 @@ img {
         border-radius: 30px;
         margin-right: 10px; 
         margin-left: 10px; 
-        margin-bottom: 10px;
-        padding: 20px;
+        margin-bottom: 20px;
         width: calc(100% / 3 - 20px); 
         text-align: center;
     }
@@ -285,6 +399,17 @@ img {
         width: calc((100% / 3 - 10px) * 2);
         text-align: left; 
     }
+
+    .left_double_column{
+        width: 60%;
+    }
+    
+    .right_double_column{
+        width: 40%;
+        display: flex;
+        align-items: flex-end;
+    }
+
 
     .cards{
         display: flex;
@@ -331,6 +456,25 @@ img {
         margin-right: 20px;
         margin-bottom: 20px;
     }
+
+    .container_aboutus{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_aboutus> *{
+        margin-bottom: 20px;    
+    }
+
+    .aboutus_left> * , .aboutus_right> * {
+        margin-bottom: 20px;    
+    }
+
+    .aboutus_right{
+        margin-left: 30px;
+    }
+
+
 
 
 }
